@@ -27,7 +27,7 @@ const SignUp = () => {
                 .required('Required')
         }),
         onSubmit: async (values) => {
-            let backendurl = "http://localhost:3002/users/registers";
+            let backendurl = "https://vercel.com/okunade-adeolas-projects/project-backend/users/registers";
             try {
                 const response = await axios.post(backendurl, values);
                 console.log(response.data);
