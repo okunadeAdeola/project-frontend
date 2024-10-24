@@ -23,7 +23,7 @@ const ResetPassword = () => {
                 .required('Required')
         }),
         onSubmit: async (values) => {
-            const backendurl = `https://vercel.com/okunade-adeolas-projects/project-backend/users/reset-password`;
+            const backendurl = `https://project-backend-rxfi.onrender.com/users/reset-password`;
             try {
                 const response = await axios.post(backendurl, { token, password: values.password });
                 console.log(response.data);

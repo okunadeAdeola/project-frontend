@@ -18,7 +18,7 @@ const ForgotPassword = () => {
                 .required('Required')
         }),
         onSubmit: async (values) => {
-            let backendurl = "https://vercel.com/okunade-adeolas-projects/project-backend/users/forgot-password";
+            let backendurl = "https://project-backend-rxfi.onrender.com/users/forgot-password";
             try {
                 const response = await axios.post(backendurl, values);
 
